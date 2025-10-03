@@ -31,35 +31,32 @@ const Portfolio = () => {
   }, [selectTab]) // Dependency array ensures this effect runs only when selectTab changes
 
     return (
-        <section id='portfolio'>
+        <section id='portfolio' className='bg-white dark:bg-gray-900 transition-colors duration-300'>
           <div className='container'>
            <div className='flex items-center justify-between flex-wrap'>
             <div className='mb-7 sm:mb-0'>
-             <h3 className='text-headingColor text-[2rem] font-[700]'>My Recent Projects</h3> {/* Corrected typo: Projets -> Projects */}
+             <h3 className='text-headingColor dark:text-white text-[2rem] font-[700]'>My Recent Projects</h3> {/* Corrected typo: Projets -> Projects */}
             </div>
 
             <div className='flex gap-3'>
               {/* --- All Button --- */}
               <button
                 onClick={() => setSelectTab('all')}
-                // **DEBUGGED**: Removed the extra single quote ' at the end of `hover:text-white`
-                className={`text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-smallTextColor hover:text-white ${selectTab === 'all' ? 'active__btn-color' : ''}`}
+                className={`text-smallTextColor dark:text-gray-300 border border-solid border-smallTextColor dark:border-gray-600 py-2 px-4 rounded-[8px] hover:bg-smallTextColor hover:text-white dark:hover:bg-gray-700 transition-colors duration-200 ${selectTab === 'all' ? 'active__btn-color' : ''}`}
               >
                 All
               </button>
               {/* --- Web Design Button --- */}
               <button
                 onClick={() => setSelectTab('webDesign')}
-                // **DEBUGGED**: Removed the extra single quote ' at the end of `hover:text-white`
-                className={`text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-smallTextColor hover:text-white ${selectTab === 'webDesign' ? 'active__btn-color' : ''}`}
+                className={`text-smallTextColor dark:text-gray-300 border border-solid border-smallTextColor dark:border-gray-600 py-2 px-4 rounded-[8px] hover:bg-smallTextColor hover:text-white dark:hover:bg-gray-700 transition-colors duration-200 ${selectTab === 'webDesign' ? 'active__btn-color' : ''}`}
               >
                 Web Design
               </button>
               {/* --- UI-Design Button --- */}
               <button
                 onClick={() => setSelectTab('UI')}
-                // **DEBUGGED**: Removed the extra single quote ' AND corrected the `selectTab` comparison from 'webDesign' to 'UI'
-                className={`text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-smallTextColor hover:text-white ${selectTab === 'UI' ? 'active__btn-color' : ''}`}
+                className={`text-smallTextColor dark:text-gray-300 border border-solid border-smallTextColor dark:border-gray-600 py-2 px-4 rounded-[8px] hover:bg-smallTextColor hover:text-white dark:hover:bg-gray-700 transition-colors duration-200 ${selectTab === 'UI' ? 'active__btn-color' : ''}`}
               >
                 UI-Design
               </button>
@@ -79,14 +76,14 @@ const Portfolio = () => {
                // **DEBUGGED**: Corrected the border style from `border-solid-[9px]` to `border-solid`
                className='group max-w-full sm:w-[31.8%] lg:w-[32.2%] relative z-[1] '>
                <figure>
-                <img className='rounded-[8px] border border-solid border-smallTextColor' src={item.image} alt='Project Thumbnail' /> {/* **DEBUGGED**: Changed alt text for accessibility */}
+                <img className='rounded-[8px] border border-solid border-smallTextColor dark:border-gray-600' src={item.image} alt='Project Thumbnail' /> {/* **DEBUGGED**: Changed alt text for accessibility */}
                </figure>
 
                <div className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
                  <div className='w-full h-full flex items-center justify-center'>
                    <button
                        onClick={() => showModalHandler(item.id)}
-                       className='text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200 '>
+                       className='text-white bg-headingColor hover:bg-smallTextColor dark:bg-blue-600 dark:hover:bg-blue-700 py-2 px-4 rounded-[8px] font-[500] transition-colors duration-200 '>
                      See Details
                    </button>
                  </div>
@@ -102,7 +99,7 @@ const Portfolio = () => {
              nextItems < portfolios.length && (
              <button
                onClick={loadMoreHandler}
-               className='text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200 '
+               className='text-white bg-primaryColor hover:bg-smallTextColor dark:bg-blue-600 dark:hover:bg-blue-700 py-2 px-4 rounded-[8px] font-[500] transition-colors duration-200 '
                >
                  Load More
                </button>

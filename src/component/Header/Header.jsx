@@ -1,4 +1,5 @@
 import React,{useRef, useEffect} from 'react'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
 const Header = () => {
   const headerRef = useRef(null)
@@ -44,7 +45,7 @@ const Header = () => {
     return (
         <header
               ref={headerRef }
-              className='w-full h-[80px] leading-[80px] flex items-center '>
+              className='w-full h-[80px] leading-[80px] flex items-center bg-white dark:bg-gray-900 transition-colors duration-300'>
            <div className='container' >
             <div className='flex items-center justify-between'>
              { /*======= logo =========  */ }
@@ -54,8 +55,8 @@ const Header = () => {
                 </span>
 
                 <div className='leading-[20px]'>
-                  <h2 className='text-xl text-smallTextColor font-[700]'>Suraj</h2>
-                  <p className='text-smallTextColor text-[13px] font-[500]'> Personal</p>
+                  <h2 className='text-xl text-smallTextColor dark:text-gray-200 font-[700]'>Suraj</h2>
+                  <p className='text-smallTextColor dark:text-gray-400 text-[13px] font-[500]'> Personal</p>
                 </div>
              </div>
 
@@ -67,7 +68,7 @@ const Header = () => {
                       <li>
                         <a
                         onClick={handleClick}
-                        className='text-smallTextColor font-[600] '
+                        className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200'
                         href='#services'
                         >
                         Services
@@ -76,17 +77,17 @@ const Header = () => {
                       <li>
                         <a
                          onClick={handleClick}
-                         className='text-smallTextColor font-[600]' href='#portfolio'>Portfolio</a>
+                         className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200' href='#portfolio'>Portfolio</a>
                       </li>
                       <li>
                         <a
                         onClick={handleClick}
-                        className='text-smallTextColor font-[600]' href='#about'>About</a> 
+                        className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200' href='#about'>About</a> 
                       </li>
                       <li>
                         <a
                          onClick={handleClick}
-                         className='text-smallTextColor font-[600]' href='#contact'>Contact</a>
+                         className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200' href='#contact'>Contact</a>
                       </li>
                    </ul>
                  </div>
@@ -108,7 +109,7 @@ const Header = () => {
                         <li>
                           <a
                           onClick={(e) => {handleClick(e); toggleMenu()}}
-                          className='text-smallTextColor font-[600] '
+                          className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200'
                           href='#services'
                           >
                           Services
@@ -117,17 +118,17 @@ const Header = () => {
                         <li>
                           <a
                            onClick={(e) => {handleClick(e); toggleMenu()}}
-                           className='text-smallTextColor font-[600]' href='#portfolio'>Portfolio</a>
+                           className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200' href='#portfolio'>Portfolio</a>
                         </li>
                         <li>
                           <a
                           onClick={(e) => {handleClick(e); toggleMenu()}}
-                          className='text-smallTextColor font-[600]' href='#about'>About</a> 
+                          className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200' href='#about'>About</a> 
                         </li>
                         <li>
                           <a
                            onClick={(e) => {handleClick(e); toggleMenu()}}
-                           className='text-smallTextColor font-[600]' href='#contact'>Contact</a>
+                           className='text-smallTextColor dark:text-gray-300 font-[600] hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200' href='#contact'>Contact</a>
                         </li>
                      </ul>
                    </div>
@@ -135,9 +136,10 @@ const Header = () => {
 
                { /*======= menu right =========  */ }
                  <div className='flex items-center gap-4'>
+                   <ThemeToggle />
                    <button
                      onClick={handleLetsTalkClick} // Added onClick handler for the button
-                     className='flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallSmallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white  ease-in duration-300 '>
+                     className='flex items-center gap-2 text-smallTextColor dark:text-gray-300 font-[600] border border-solid border-smallSmallTextColor dark:border-gray-600 py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white dark:hover:bg-gray-700 ease-in duration-300 '>
                     <i className='ri-send-plane-line'></i> Let's Talk
                    </button>
                     {/* <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] '>
@@ -146,7 +148,7 @@ const Header = () => {
                     </button> */}
                    <button
                        onClick={toggleMenu}
-                       className='text-2xl text-smallTextColor md:hidden cursor-pointer p-2 hover:bg-gray-100 rounded-md transition-colors duration-200'
+                       className='text-2xl text-smallTextColor dark:text-gray-300 md:hidden cursor-pointer p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors duration-200'
                        aria-label='Toggle menu'
                        type='button'
                    >

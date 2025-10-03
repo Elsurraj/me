@@ -9,6 +9,7 @@ import Hero from './component/Ul/Hero';
 import Services from './component/Ul/Services';
 import Portfolio from './component/Ul/Portfolio'
 import Contact from './component/Ul/Contact';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App(){
   useEffect(() =>{
@@ -16,16 +17,18 @@ function App(){
   }, []);
 
   return(
-  <div>
-    <Header />
-    <main>
-     <Hero />
-     <Services />
-     <Portfolio />
-     <Contact />
-    </main>
-    <Footer/>
-</div>
+  <ThemeProvider>
+    <div className="transition-colors duration-300 min-h-screen bg-white dark:bg-gray-900">
+      <Header />
+      <main>
+       <Hero />
+       <Services />
+       <Portfolio />
+       <Contact />
+      </main>
+      <Footer/>
+    </div>
+  </ThemeProvider>
 )
 }
 
