@@ -61,12 +61,9 @@ const Header = () => {
 
              { /*======= logo end=========  */ }
                { /*======= menu start =========  */ }
-               <div
-                   className='menu'
-                   onClick={toggleMenu}
-                   ref={menuRef}
-                   >
-                   <ul className='flex items-center gap-10'>
+               {/* Desktop Menu */}
+               <div className='hidden md:block'>
+                   <ul className='flex items-center gap-10 md:gap-6 lg:gap-10'>
                       <li>
                         <a
                         onClick={handleClick}
@@ -93,6 +90,47 @@ const Header = () => {
                       </li>
                    </ul>
                  </div>
+
+                 {/* Mobile Menu */}
+                 <div
+                     className='menu'
+                     ref={menuRef}
+                     onClick={(e) => {
+                       if (e.target === e.currentTarget) {
+                         toggleMenu();
+                       }
+                     }}
+                 >
+                     <div className='menu-close md:hidden' onClick={toggleMenu}>
+                       <i className='ri-close-line'></i>
+                     </div>
+                     <ul className='flex items-center gap-10'>
+                        <li>
+                          <a
+                          onClick={(e) => {handleClick(e); toggleMenu()}}
+                          className='text-smallTextColor font-[600] '
+                          href='#services'
+                          >
+                          Services
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                           onClick={(e) => {handleClick(e); toggleMenu()}}
+                           className='text-smallTextColor font-[600]' href='#portfolio'>Portfolio</a>
+                        </li>
+                        <li>
+                          <a
+                          onClick={(e) => {handleClick(e); toggleMenu()}}
+                          className='text-smallTextColor font-[600]' href='#about'>About</a> 
+                        </li>
+                        <li>
+                          <a
+                           onClick={(e) => {handleClick(e); toggleMenu()}}
+                           className='text-smallTextColor font-[600]' href='#contact'>Contact</a>
+                        </li>
+                     </ul>
+                   </div>
                { /*======= menu end =========  */ }
 
                { /*======= menu right =========  */ }
@@ -106,11 +144,14 @@ const Header = () => {
                       <i className="ri-whatsapp-line"></i>
                         Let's Chart 
                     </button> */}
-                   <span
+                   <button
                        onClick={toggleMenu}
-                       className='text-2xl text-smallTextColor md:hidden cursor-pointer '>
+                       className='text-2xl text-smallTextColor md:hidden cursor-pointer p-2 hover:bg-gray-100 rounded-md transition-colors duration-200'
+                       aria-label='Toggle menu'
+                       type='button'
+                   >
                      <i className='ri-menu-line'></i>
-                   </span>
+                   </button>
                  </div>
             </div>
            </div>
