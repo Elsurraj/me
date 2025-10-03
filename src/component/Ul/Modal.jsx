@@ -33,12 +33,12 @@ const Modal = ({activeID, setShowModal}) => {
             className='w-full h-full fixed top-0 left-0 z-50 bg-black bg-opacity-50 dark:bg-black dark:bg-opacity-70 flex items-center justify-center p-4 backdrop-blur-sm'
             onClick={handleBackdropClick}
         >
-           <div className='w-full max-w-4xl max-h-[90vh] bg-white dark:bg-gray-800 rounded-lg shadow-2xl overflow-hidden transition-colors duration-300'>
+           <div className='w-full max-w-4xl max-h-[90vh] bg-white dark:bg-gray-800 rounded-lg shadow-2xl overflow-y-auto transition-colors duration-300'>
              {/* Modal Content Container */}
-             <div className='flex flex-col lg:flex-row overflow-hidden max-h-[90vh]'>
+             <div className='flex flex-col lg:flex-row'>
                {/* Image Section */}
-               <div className='lg:w-1/2 p-4 lg:p-6'>
-                 <figure className='w-full h-48 sm:h-64 lg:h-full min-h-[300px] overflow-hidden rounded-lg'>
+               <div className='lg:w-1/2 p-4 lg:p-6 flex-shrink-0'>
+                 <figure className='w-full aspect-video lg:aspect-square overflow-hidden rounded-lg'>
                    <img 
                      className='w-full h-full object-cover rounded-lg' 
                      src={portfolio.image} 
@@ -48,7 +48,7 @@ const Modal = ({activeID, setShowModal}) => {
                </div>
                
                {/* Content Section */}
-               <div className='lg:w-1/2 p-4 lg:p-6 flex flex-col justify-between overflow-y-auto'>
+               <div className='lg:w-1/2 p-4 lg:p-6 flex flex-col justify-between'>
                  <div>
                    <h2 className='text-xl sm:text-2xl lg:text-3xl text-headingColor dark:text-white font-bold mb-4'>
                      {portfolio.title}

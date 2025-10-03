@@ -7,13 +7,13 @@ import AppsImg from '../../assests/images/frontend.png'
 
 const Services = () => {
     return (
-        <section id='services'>
+        <section id='services' className='bg-white dark:bg-gray-900 transition-colors duration-300'>
          <div className='container lg:pt-5'>
           <div className='text-center'>
-           <h2 className='text-headingColor font-[800] text-[2.3rem] mb-5 '>
+           <h2 className='text-headingColor dark:text-white font-[800] text-[2.3rem] mb-5 '>
               What do I help
            </h2>
-            <p className='lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7 '>
+            <p className='lg:max-w-[600px] lg:mx-auto text-headingColor dark:text-gray-300 font-[500] text-[16px] leading-7 '>
             Welcome! I'm here to assist you in bringing your digital visions to life. With a blend of creativity, 
             technical expertise, and a passion for innovation, I specialize in ...
             </p>
@@ -34,12 +34,12 @@ const Services = () => {
                     <div 
                         data-aos='fade-right'
                         data-aos-duration='1200'
-                        className='bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150'
+                        className='bg-white dark:bg-gray-800 p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-blue-600 cursor-pointer transition-all duration-150'
                     >
-                     <h3 className='text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
+                     <h3 className='text-primaryColor dark:text-blue-400 font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
                       Frontend Development
                      </h3>
-                     <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[700] leading-7 '>
+                     <p className='text-[15px] text-smallTextColor dark:text-gray-300 group-hover:text-white group-hover:font-[700] leading-7 '>
                      I excel in crafting intuitive user interfaces and seamless experiences for websites and 
                      web applications. Proficient in HTML, CSS, and JavaScript, I leverage frameworks like 
                      React and Vue.js to create dynamic and responsive designs. With a keen focus on 
@@ -67,12 +67,12 @@ const Services = () => {
                         data-aos='fade-left'
                         data-aos-delay='50'
                         data-aos-duration='1300'
-                        className='bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150'
+                        className='bg-white dark:bg-gray-800 p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-blue-600 cursor-pointer transition-all duration-150'
                     >
-                     <h3 className='text-primaryColor font-[600] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
+                     <h3 className='text-primaryColor dark:text-blue-400 font-[600] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
                      Backend Development
                      </h3>
-                     <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[700] leading-7 '>
+                     <p className='text-[15px] text-smallTextColor dark:text-gray-300 group-hover:text-white group-hover:font-[700] leading-7 '>
                      Proficient in building robust server-side applications and APIs to power dynamic web experiences.
                       Skilled in languages like Python, Node.js, and PHP, along with frameworks such as Django,
                        Express, and Laravel. Experience in database management, authentication, and optimizing
@@ -99,12 +99,12 @@ const Services = () => {
                         data-aos='fade-right'
                         data-aos-delay='100'
                         data-aos-duration='1400'
-                        className='bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150'
+                        className='bg-white dark:bg-gray-800 p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-blue-600 cursor-pointer transition-all duration-150'
                     >
-                     <h3 className='text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
+                     <h3 className='text-primaryColor dark:text-blue-400 font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
                       UI/UX Design
                      </h3>
-                     <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[700] leading-7 '>
+                     <p className='text-[15px] text-smallTextColor dark:text-gray-300 group-hover:text-white group-hover:font-[700] leading-7 '>
                      Crafting intuitive and visually appealing interfaces to enhance user engagement and 
                      satisfaction. Proficient in wireframing, prototyping, and user testing to create seamless 
                      experiences. Expertise in Adobe XD, Sketch, and Figma, with a focus on user research and 
@@ -130,12 +130,12 @@ const Services = () => {
                     <div 
                         data-aos='fade-left'
                         data-aos-duration='1500'
-                        className='bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150'
+                        className='bg-white dark:bg-gray-800 p-4 rounded shadow group hover:bg-primaryColor dark:hover:bg-blue-600 cursor-pointer transition-all duration-150'
                     >
-                     <h3 className='text-primaryColor font-[600] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
+                     <h3 className='text-primaryColor dark:text-blue-400 font-[600] mb-3 group-hover:text-white group-hover:font-[700] text-xl '>
                      Apps Development
                      </h3>
-                     <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[700] leading-7 '>
+                     <p className='text-[15px] text-smallTextColor dark:text-gray-300 group-hover:text-white group-hover:font-[700] leading-7 '>
                      Specializing in building innovative mobile applications for iOS and Android platforms.
                       Proficient in languages along with frameworks.
                      Experienced in full-stack app development, from UI design to backend integration and deployment.                

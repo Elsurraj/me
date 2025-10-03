@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 
 const Hero = () => {
     return (
-        <section className='pt-0' id='about'>
+        <section className='pt-0 bg-white dark:bg-gray-900 transition-colors duration-300' id='about'>
           <div className='container pt-14'>
             <div className='md:flex items-center justify-between sm:flex-col md:flex-row'>
              { /*======= hero left content=========  */ }
@@ -13,14 +13,14 @@ const Hero = () => {
                <h5
                    data-aos='fade-right'
                    data-aos-duration='1500'
-                   className='text-headingColor font-[600] text-[15px] '
+                   className='text-headingColor dark:text-gray-200 font-[600] text-[15px] '
                >
                Hello welcome
                </h5>
                <h1
                    data-aos='fade-up'
                    data-aos-duration='1500'
-                   className='text-headingColor font-[800] text-[1.6rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5 '
+                   className='text-headingColor dark:text-white font-[800] text-[1.6rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5 '
                >
                I'm Surraj Abubakhar <br/>
                Software Developer
@@ -33,33 +33,33 @@ const Hero = () => {
                     className='flex items-center gap-6 mt-7'>
                      
                      <a href='/SURAJ-Professional_CV.pdf' download="Suraj_Abubakhar_CV.pdf"> 
-                        <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
+                        <button className='bg-primaryColor dark:bg-blue-600 text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor dark:hover:bg-blue-700 transition-colors duration-300 py-2 px-4 rounded-[8px]'>
                            <i className='ri-file-download-line'></i> Hire me 
                         </button>
                      </a>
-                     <a href='#portfolio' className='text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor '> See Portfolio </a>
+                     <a href='#portfolio' className='text-smallTextColor dark:text-gray-300 font-[600] text-[16px] border-b border-solid border-smallTextColor dark:border-gray-400 hover:text-primaryColor dark:hover:text-blue-400 transition-colors duration-200'> See Portfolio </a>
                    </div>
                      <p
-                    data-aos='fade-left'
-                    data-aos-duration='1500'
-                    className='flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10 '
-                   >
-                   <span>
-                      <i className='ri-apps-2-line'></i>
-                   </span>
-                   A passionate and creative Web Developer with a B.Tech in Computer Science, specialize
-                   in crafting intuitive, user-friendly websites. My drive lies in transforming complex
-                    challenges into simple, elegant solutions that enhance user engagement and drive success.
-                    Beyond coding, I'm an avid fan of football, i enjoy reading, i love to travel,
-                    and consistently explore new technologies.
-                     </p>
+                   data-aos='fade-left'
+                   data-aos-duration='1500'
+                   className='flex gap-2 text-headingColor dark:text-gray-300 mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10 '
+                  >
+                  <span>
+                     <i className='ri-apps-2-line'></i>
+                  </span>
+                  A passionate and creative Web Developer with a B.Tech in Computer Science, specialize
+                  in crafting intuitive, user-friendly websites. My drive lies in transforming complex
+                   challenges into simple, elegant solutions that enhance user engagement and drive success.
+                   Beyond coding, I'm an avid fan of football, i enjoy reading, i love to travel,
+                   and consistently explore new technologies.
+                    </p>
 
                      <div className='flex items-center gap-9 mt-12'>
-                       <span className='text-smallTextColor text-[15px] font-[600] '>Follow me:</span>
+                       <span className='text-smallTextColor dark:text-gray-300 text-[15px] font-[600] '>Follow me:</span>
                        <span>
                          <a 
                           href='https://wa.me/2347061329623'
-                          className='text-smallTextColor text-[18px] font-[600]'
+                          className='text-smallTextColor dark:text-gray-300 hover:text-primaryColor dark:hover:text-blue-400 text-[18px] font-[600] transition-colors duration-200'
                           >
                         <i className='ri-whatsapp-line'></i>
                            </a>
@@ -67,7 +67,7 @@ const Hero = () => {
                        <span>
                          <a
                              href='https://github.com/Elsurraj/'
-                              className='text-smallTextColor text-[18px] font-[600]'
+                              className='text-smallTextColor dark:text-gray-300 hover:text-primaryColor dark:hover:text-blue-400 text-[18px] font-[600] transition-colors duration-200'
                           >
                             <i className='ri-github-fill'></i>
                           </a>
@@ -75,14 +75,14 @@ const Hero = () => {
                        <span>
                          <a 
                             href='https://www.facebook.com/surraj.ahmeed.abubakharHardo'
-                              className='text-smallTextColor text-[18px] font-[600]'
+                              className='text-smallTextColor dark:text-gray-300 hover:text-primaryColor dark:hover:text-blue-400 text-[18px] font-[600] transition-colors duration-200'
                           >
                             <i className='ri-facebook-line'></i>
                           </a>
                        </span>
                        <span>
                          <a href='#'
-                              className='text-smallTextColor text-[18px] font-[600]'
+                              className='text-smallTextColor dark:text-gray-300 hover:text-primaryColor dark:hover:text-blue-400 text-[18px] font-[600] transition-colors duration-200'
                           >
                             <i className='ri-instagram-line'></i>
                           </a>
@@ -101,28 +101,28 @@ const Hero = () => {
              { /*======= hero content right=========  */ }
                 <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end'>
                   <div className='mb-10'>
-                      <h2 className='text-headingColor font-[700] text-[24px] md:text-[32px]'>
+                      <h2 className='text-headingColor dark:text-white font-[700] text-[24px] md:text-[32px]'>
                           <CountUp start={0} end={9} duration={2} suffix='+' />
                       </h2>
-                      <h4 className='text-headingColor font-[600] text-[15px] md:text-[18px]'>Years of Experience</h4>
+                      <h4 className='text-headingColor dark:text-gray-300 font-[600] text-[15px] md:text-[18px]'>Years of Experience</h4>
                   </div>
                   <div className='mb-10'>
-                      <h2 className='text-headingColor font-[700] text-[24px] md:text-[32px]'>
+                      <h2 className='text-headingColor dark:text-white font-[700] text-[24px] md:text-[32px]'>
                           <CountUp start={0} end={99} duration={2} suffix='%' />
                       </h2>
-                      <h4 className='text-headingColor font-[600] text-[15px] md:text-[18px]'>Success Rate</h4>
+                      <h4 className='text-headingColor dark:text-gray-300 font-[600] text-[15px] md:text-[18px]'>Success Rate</h4>
                   </div>
                   <div className='mb-10'>
-                      <h2 className='text-headingColor font-[700] text-[24px] md:text-[32px]'>
+                      <h2 className='text-headingColor dark:text-white font-[700] text-[24px] md:text-[32px]'>
                           <CountUp start={0} end={150} duration={2} suffix='+' />
                       </h2>
-                      <h4 className='text-headingColor font-[600] text-[15px] md:text-[18px]'>Happy Clients</h4>
+                      <h4 className='text-headingColor dark:text-gray-300 font-[600] text-[15px] md:text-[18px]'>Happy Clients</h4>
                   </div>
                   <div className='mb-10'>
-                      <h2 className='text-headingColor font-[700] text-[24px] md:text-[32px]'>
+                      <h2 className='text-headingColor dark:text-white font-[700] text-[24px] md:text-[32px]'>
                           <CountUp start={70} end={90} duration={2} suffix='+' />
                       </h2>
-                      <h4 className='text-headingColor font-[600] text-[15px] md:text-[18px]'>Project Completed</h4>
+                      <h4 className='text-headingColor dark:text-gray-300 font-[600] text-[15px] md:text-[18px]'>Project Completed</h4>
                   </div>
               </div>
 

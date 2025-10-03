@@ -138,8 +138,8 @@ const Header = () => {
                  <div className='flex items-center gap-4'>
                    <ThemeToggle />
                    <button
-                     onClick={handleLetsTalkClick} // Added onClick handler for the button
-                     className='flex items-center gap-2 text-smallTextColor dark:text-gray-300 font-[600] border border-solid border-smallSmallTextColor dark:border-gray-600 py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white dark:hover:bg-gray-700 ease-in duration-300 '>
+                     onClick={handleLetsTalkClick}
+                     className='hidden sm:flex items-center gap-2 text-smallTextColor dark:text-gray-300 font-[600] border border-solid border-smallTextColor dark:border-gray-600 py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white dark:hover:bg-gray-700 transition-colors duration-300'>
                     <i className='ri-send-plane-line'></i> Let's Talk
                    </button>
                     {/* <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] '>
