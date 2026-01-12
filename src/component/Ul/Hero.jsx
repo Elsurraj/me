@@ -32,7 +32,7 @@ const Hero = () => {
                     data-aos-delay='200'
                     className='flex items-center gap-6 mt-7'>
                      
-                     <a href='/SURAJ-Professional_CV.pdf' download="Suraj_Abubakhar_CV.pdf"> 
+                     <a href='/cv.pdf' download="Suraj_Abubakhar_CV.pdf"> 
                         <button className='bg-primaryColor dark:bg-blue-600 text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor dark:hover:bg-blue-700 transition-colors duration-300 py-2 px-4 rounded-[8px]'>
                            <i className='ri-file-download-line'></i> Hire me 
                         </button>
@@ -92,8 +92,8 @@ const Hero = () => {
              { /*======= hero left end=========  */ }
              { /*======= hero img=========  */ }
             <div className='basis-1/3 mt-10 sm:mt-0'>
-             <figure className='flex items-center justify-center rounded-full'>
-                <img src={HrImg} alt='pix'/>
+             <figure className='flex items-center justify-center rounded-full '>
+                <img src={HrImg} alt='pix' className='rounded-[50px]' />
              </figure>
             </div>
 
