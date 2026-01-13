@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/me/static/css/main.37ffcf40.css",
-    "main.js": "/me/static/js/main.3f05cb7a.js",
+    "main.js": "/me/static/js/main.530c4a8b.js",
     "static/media/AmsajMotor.PNG": "/me/static/media/AmsajMotor.f0f24610f0f8efc7c096.PNG",
     "static/media/remixicon.svg?t=1590207869815": "/me/static/media/remixicon.9cedd2150922ead84869.svg",
+    "static/media/hamzurry.PNG": "/me/static/media/hamzurry.8e07b021b5f39afacffb.PNG",
+    "static/media/sync.PNG": "/me/static/media/sync.07df28d52e014f8c537a.PNG",
     "static/media/AmsajTour.PNG": "/me/static/media/AmsajTour.a739d3d332e311597c82.PNG",
     "static/media/pharmacyStore.PNG": "/me/static/media/pharmacyStore.038507a83781b7a98e20.PNG",
     "static/media/AmsajStore.PNG": "/me/static/media/AmsajStore.ee081d6ce4bf732d9631.PNG",
     "static/media/bgG.PNG": "/me/static/media/bgG.f2775110fe6010eac862.PNG",
     "static/media/remixicon.eot?t=1590207869815": "/me/static/media/remixicon.5cb99e6cba5a4619063f.eot",
     "static/media/remixicon.ttf?t=1590207869815": "/me/static/media/remixicon.f2616f597cf98f38d234.ttf",
-    "static/media/rummies.PNG": "/me/static/media/rummies.d8673165ab1735540666.PNG",
     "static/media/AmsajKitchen.PNG": "/me/static/media/AmsajKitchen.e4e61cfff94559a5dbd6.PNG",
+    "static/media/gym.PNG": "/me/static/media/gym.285559b5c6cc37601b15.PNG",
     "static/media/AmsajAcademy.PNG": "/me/static/media/AmsajAcademy.51769a2d4d865a77fdeb.PNG",
     "static/media/fd1.PNG": "/me/static/media/fd1.8b90b87100e0358c5027.PNG",
     "static/media/remixicon.woff?t=1590207869815": "/me/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/class-connect.PNG": "/me/static/media/class-connect.358328585a11979d6d33.PNG",
     "static/media/remixicon.woff2?t=1590207869815": "/me/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
     "static/media/TimeTable.PNG": "/me/static/media/TimeTable.b61208f84ad315879e15.PNG",
     "static/media/baldoShoe.PNG": "/me/static/media/baldoShoe.2f0fefd5ded14c125289.PNG",
@@ -25,10 +28,10 @@
     "static/media/board.PNG": "/me/static/media/board.0233f7e02206e726b27e.PNG",
     "index.html": "/me/index.html",
     "main.37ffcf40.css.map": "/me/static/css/main.37ffcf40.css.map",
-    "main.3f05cb7a.js.map": "/me/static/js/main.3f05cb7a.js.map"
+    "main.530c4a8b.js.map": "/me/static/js/main.530c4a8b.js.map"
   },
   "entrypoints": [
     "static/css/main.37ffcf40.css",
-    "static/js/main.3f05cb7a.js"
+    "static/js/main.530c4a8b.js"
   ]
 }
